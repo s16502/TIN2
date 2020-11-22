@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GreenLeaf</title>
+    <link rel="stylesheet" href="/css/style.css" />
+</head>
+<body>
+    <header>
+        <h1>GreenLeaf Konsulting Środowiskowy</h1>
+        <img src="/images/logo.jpg" alt="GreenLeaf Logo">
+        
+        
+    </header>
+    <nav>
+            <ul>
+                <li><a href="/index.html" >Strona główna</a></li>
+                <li><a href="/pages/consultant-list.html" class="active">Konsultanci</a></li>
+                <li><a href="/pages/project-list.html">Projekty</a></li>
+            </ul> 
+        </nav> 
+    <main>
+        <h2>Rejestr godzin na projektach</h2>
+
+        <div class="select">
+            <select>
+              <option>--wybierz projekt--</option>
+              <option>Projekt nr. 1</option>
+              <option>Projekt nr. 2</option>
+              <option>Projekt nr. 3</option>
+            </select>
+            <div class="select-arrow"></div>
+          </div>
+
+          <form class="form">
+            
+            <div>
+                <label for="Date">Data:</label>
+                <input type="date" name="Date" id="Date">
+            </div>
+
+            <div>
+                <label for="IloscGodz">Ilość godzin:</label>
+                <input type="number" name="IloscGodz" id="IloscGodz">
+            </div>
+
+            <div>
+                <label for="TypPracy">Typ pracy:</label>
+                <input type="text" name="TypPracy" id="Typ pracy">
+            </div>
+
+        </form>
+
+        <div>
+            <input type="submit" value="Dodaj" class="button-edit" />
+            <a href="consultant-list.html" class="button-cancel">Anuluj</a>    
+        </div> 
+        
+
+    </main>
+    <footer>
+        Ewa Piotrowska, s16502
+    </footer>
+</body>
+</html>

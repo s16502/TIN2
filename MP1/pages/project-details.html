@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GreenLeaf</title>
+    <link rel="stylesheet" href="/css/style.css" />
+</head>
+<body>
+    <header>
+        <h1>GreenLeaf Konsulting Środowiskowy</h1>
+        <img src="/images/logo.jpg" alt="GreenLeaf Logo">
+        
+        
+    </header>
+    <nav>
+            <ul>
+                <li><a href="/index.html" >Strona główna</a></li>
+                <li><a href="/pages/consultant-list.html">Konsultanci</a></li>
+                <li><a href="/pages/project-list.html" class="active">Projekty</a></li>
+            </ul> 
+        </nav> 
+    <main>
+        <h2>Szczegóły projektu</h2>
+        <form class="form">
+            <div>
+                <label for="number">Number:</label>
+                <input type="number" name="number" value="1" id="number" disabled="true">
+            </div>
+
+            <div>
+                <label for="name">Nazwa:</label>
+                <input type="text" name="name" value="Astra" id="name" disabled="true">
+            </div>
+
+            <div>
+                <label for="date">Data:</label>
+                <input type="text" name="date" value="20.05.2020" id="date" disabled="true">
+            </div>
+
+            <div>
+                <label for="location">Lokalizacja:</label>
+                <input type="text" name="location" value="Poznań" id="location" disabled="true">
+
+            </div>
+        </form>
+
+        <h2>Konsultaci pracujący na projekcie</h2>
+
+        <table class="table-list">
+            <thead>
+                <tr>
+                    <th>Imie konsultanta</th>
+                    <th>Nazwisko konsultanta</th>
+                    <th>Ilość godzin</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>Anna</td>
+                    <td>Nowak</td>
+                    <td>12</td>
+                  
+                </tr>
+            </tbody>
+
+            <tbody>
+                <tr>
+                    <td>Piotr</td>
+                    <td>Kot</td>
+                    <td>9</td>
+                </tr>
+            </tbody>
+           
+        </table>
+
+        <div>
+            <a href="/pages/consultant-edit.html" class="button-edit">Edytuj</a>  
+            <a href="/pages/consultant-list.html" class="button-cancel">Anuluj</a>  
+        </div>
+        
+    </main>
+    <footer>
+        Ewa Piotrowska, s16502
+    </footer>
+</body>
+</html>

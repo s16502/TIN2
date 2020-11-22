@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GreenLeaf</title>
+    <link rel="stylesheet" href="/css/style.css" />
+</head>
+<body>
+    <header>
+        <h1>GreenLeaf Konsulting Środowiskowy</h1>
+        <img src="/images/logo.jpg" alt="GreenLeaf Logo">
+        
+        
+    </header>
+    <nav>
+            <ul>
+                <li><a href="/index.html" >Strona główna</a></li>
+                <li><a href="/pages/consultant-list.html" class="active">Konsultanci</a></li>
+                <li><a href="/pages/project-list.html">Projekty</a></li>
+            </ul> 
+        </nav> 
+    <main>
+        <h2>Edytuj konsultanta</h2>
+        <form class="form">
+            <div>
+                <label for="empName">Imię:</label>
+                <input type="text" name="empName" value="Jan" id="empName" disabled="true">
+            </div>
+
+            <div>
+                <label for="empSurname">Nazwisko:</label>
+                <input type="text" name="empSurname" value="Kowalski" id="empSurname" disabled="true">
+            </div>
+
+            <div>
+                <label for="empEmail">Email:</label>
+                <input type="email" name="empEmail" value="jan.kowalski@greenleaf.com" id="empEmail" disabled="true">
+            </div>
+             <div>
+                <input type="submit" value="Zmodyfikuj" class="button-edit" />  
+                <a href="/pages/consultant-list.html" class="button-cancel">Anuluj</a>  
+            </div>
+
+            
+         </form>
+        
+    </main>
+    <footer>
+        Ewa Piotrowska, s16502
+    </footer>
+</body>
+</html>
