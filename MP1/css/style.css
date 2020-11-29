@@ -49,7 +49,7 @@ nav ul li a {
     text-decoration: none;
 }
 nav ul li a:hover {
-    background-color: #28a32e;
+    background-color: #649e49;
     color: #ecf0f1;
 }
 
@@ -64,6 +64,7 @@ main {
 
 footer {
     text-align: center;
+    
 }
 
 main h2 {
@@ -102,8 +103,6 @@ main h2 {
     display: inline-block;
 }
 
-.button-edit,
-.button-cancel,
 .list-actions-button-details,
 .list-actions-button-edit,
 .list-actions-button-delete,
@@ -128,26 +127,26 @@ main h2 {
 }
 
 .list-actions-button-details {
-    background-color: #2ecc71;    
+    background-color: #649e49;    
 }
 .list-actions-button-details:hover {
-    background-color: #3af086;
+    background-color: #949596;
 }
 
 .list-actions-button-edit {
-    background-color: #2ecc71;
+    background-color: #649e49;
 }
 
 .list-actions-button-edit:hover {
-    background-color: #3af086;
+    background-color: #949596;
 }
 
 .list-actions-button-delete {
-    background-color: #2ecc71;
+    background-color: #649e49;
 }
 
 .list-actions-button-delete:hover {
-    background-color: #3af086;
+    background-color: #949596;
 }
 
 .button-edit,
@@ -164,16 +163,22 @@ main h2 {
     font-size: 0.8rem;
 }
 
+.button-edit,
+.button-cancel,
 .button-add {
     padding: 0.5rem 1rem;
 }
 
+.button-edit,
+.button-cancel,
 .button-add {
-    background-color: #2ecc71;
+    background-color: #649e49;
 }
 
+.button-edit:hover,
+.button-cancel:hover,
 .button-add:hover {
-    background-color: #3af086;
+    background-color: #949596;
 }
 
 button, 
@@ -257,23 +262,25 @@ abbr[title='required'] {
 .button-add,
 .form-button-submit
 {
-    background-color: #2ecc71;
+    background-color: #649e49;
 }
 
+.button-edit:hover,
+.button-cancel:hover,
 .button-add:hover,
 .form-button-submit:hover
 {
-    background-color: #3af086;
+    background-color: #949596;
 }
 
 .form-button-cancel,
 .list-actions-button-delete {
-    background-color: #2ecc71;
+    background-color: #649e49;
 }
 
 .form-button-cancel:hover,
 .list-actions-button-delete:hover {
-    background-color: #3af086;
+    background-color: #949596;
 }
 
 .form-button-submit,
