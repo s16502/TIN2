@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GreenLeaf</title>
     <link rel="stylesheet" href="/MP1/css/style.css" />
+    <script type="application/javascript" src="/MP1/js/validationCommon.js"></script>
+    <script type="application/javascript" src="/MP1/js/validationConsultForm.js"></script>
 </head>
 <body>
     <header>
@@ -23,22 +25,22 @@
         </nav> 
     <main>
         <h2>Edytuj projekt</h2>
-        <form class="form">
-            <div>
+        <form class="form" novalidate onsubmit="return validateForm();">
+            
                 <label for="number">Numer:</label>
                 <input type="number" name="number" value="1" id="number" disabled="true">
-            </div>
-
-            <div>
+                <span id="errorFirstName" class="errors-text"></span>
+           
                 <label for="name">Nazwa:</label>
                 <input type="text" name="name" value="Astra" id="name" disabled="true">
-            </div>
-
-            <div>
+                <span id="errorName" class="errors-text"></span>
+            
                 <label for="location">Lokalizacja</label>
                 <input type="text" name="location" value="Poznań" id="location" disabled="true">
-            </div>
-            <div>
+                <span id="errorLocation" class="errors-text"></span>
+           
+            <div class="form-buttons">
+                <p id="errorsSummary" class="errors-text"></p>
                 <a href="/MP1/pages/project-edit.html" class="button-edit">Edytuj</a>  
                 <a href="/MP1/pages/project-list.html" class="button-cancel">Anuluj</a>  
             </div>

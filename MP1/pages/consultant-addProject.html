@@ -6,13 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GreenLeaf</title>
     <link rel="stylesheet" href="/MP1/css/style.css" />
+    <script type="application/javascript" src="/MP1/js/validationCommon.js"></script>
+    <script type="application/javascript" src="/MP1/js/validationConsultForm.js"></script>
+    <script type="application/javascript" src="/js/validationProjectForm.js"></script>
 </head>
 <body>
     <header>
         <h1>GreenLeaf Konsulting Środowiskowy</h1>
         <img src="/MP1/images/logo.jpg" alt="GreenLeaf Logo">
-        
-        
     </header>
     <nav>
             <ul>
@@ -34,26 +35,25 @@
             <div class="select-arrow"></div>
           </div>
 
-          <form class="form">
+          <form class="form" novalidate onsubmit="return validateForm();">
             
-            <div>
+            
                 <label for="Date">Data:</label>
                 <input type="date" name="Date" id="Date">
-            </div>
-
-            <div>
+                <span id="errorDate" class="errors-text"></span>
+            
                 <label for="IloscGodz">Ilość godzin:</label>
                 <input type="number" name="IloscGodz" id="IloscGodz">
-            </div>
-
-            <div>
-                <label for="TypPracy">Typ pracy:</label>
+                <span id="errorIloscGodz" class="errors-text"></span>
+            
+                <label for="TypPracy">Typ pracy:</label> 
                 <input type="text" name="TypPracy" id="Typ pracy">
-            </div>
-
+                <span id="errorTypPracy" class="errors-text"></span>
+  
         </form>
 
-        <div>
+        <div class="form-buttons">
+            <p id="errorsSummary" class="errors-text"></p>
             <input type="submit" value="Dodaj" class="button-edit" />
             <a href="consultant-list.html" class="button-cancel">Anuluj</a>    
         </div> 

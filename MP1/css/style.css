@@ -40,6 +40,7 @@ nav ul {
     display: flex;
     padding: 0;
     list-style-type: none;
+    
 }
 
 nav ul li a {
@@ -103,6 +104,21 @@ main h2 {
     display: inline-block;
 }
 
+.list-actions-button-add{
+    min-width: 300;
+    padding: 0.25rem 0.5rem;
+    border: none;
+    border-radius: 5px;
+    color: rgb(19, 16, 16);
+    text-decoration: none;
+    text-align: center;
+    font-size: 0.8rem;
+    display: inline-block;
+    margin-right: 1rem;
+    background-color: #649e49; 
+}
+
+
 .list-actions-button-details,
 .list-actions-button-edit,
 .list-actions-button-delete,
@@ -129,6 +145,7 @@ main h2 {
 .list-actions-button-details {
     background-color: #649e49;    
 }
+.list-actions-button-add:hover,
 .list-actions-button-details:hover {
     background-color: #949596;
 }
@@ -149,6 +166,7 @@ main h2 {
     background-color: #949596;
 }
 
+.list-actions-button-add,
 .button-edit,
 .button-cancel,
 .list-actions-button-details,
@@ -167,6 +185,8 @@ main h2 {
 .button-cancel,
 .button-add {
     padding: 0.5rem 1rem;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
 }
 
 .button-edit,
@@ -198,8 +218,12 @@ textarea {
 .form {
     margin-left: 2rem;
     display: grid;
-    grid-template-columns: 300px 300px;
+    grid-template-columns:  150px 300px 1fr;
+    /*masonary*/
     row-gap: 1rem;
+    column-gap: 1rem;
+    
+
 }
 
 .form select, 
@@ -211,7 +235,7 @@ textarea {
     color:#2c3e50;
     border-radius: 5px;
     padding: 0.5rem;
-    width: 100%;
+    width: 300px;
 }
 
 .form label {
@@ -223,13 +247,14 @@ textarea {
     margin-bottom: 1rem;
 }
 
+.errors-text,
 abbr[title='required'] {
     color: #c0392b;
 }
 
 .form-buttons{
     margin-top: 2rem;
-    grid-column-start: 1;
+    grid-column: 1 / span 1;
     grid-column-end: -1;
 }
 
@@ -324,12 +349,12 @@ abbr[title='required'] {
         row-gap:unset;
         margin-left: unset;
     }
-    .form input[type="text"],
-    .form input[type="number"],
-    .form input[type="date"],
-    .form select {
+    .form .errors-text {
         margin-bottom: 1rem;
     }
+    .form-buttons {
+        grid-column: 1 / span 1; 
+    }    
 }
 
 @media all and (max-width: 400px) {
@@ -344,11 +369,21 @@ abbr[title='required'] {
     nav ul li {
         flex-basis: 100%;
     }
-    
-    
 }
 
+.errors-text,
+.errors-textarea {
+    font-size: 0.85em;
+    line-height: 2.25rem;
+  }
+  
+.form input.error-input,
+.form select.error-input.button-add {
+    border: 3px solid #e74c3c
+}
 
+    
+   
 
 
 

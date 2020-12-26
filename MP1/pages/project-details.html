@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GreenLeaf</title>
     <link rel="stylesheet" href="/MP1/css/style.css" />
+    <script type="application/javascript" src="/MP1/js/validationCommon.js"></script>
+    <script type="application/javascript" src="/MP1/js/validationConsultForm.js"></script>
 </head>
 <body>
     <header>
@@ -23,27 +25,24 @@
         </nav> 
     <main>
         <h2>Szczegóły projektu</h2>
-        <form class="form">
-            <div>
+        <form class="form" novalidate onsubmit="return validateForm();">
+            
                 <label for="number">Number:</label>
                 <input type="number" name="number" value="1" id="number" disabled="true">
-            </div>
+                <span id="errorNumber" class="errors-text"></span> 
 
-            <div>
                 <label for="name">Nazwa:</label>
                 <input type="text" name="name" value="Astra" id="name" disabled="true">
-            </div>
+                <span id="errorName" class="errors-text"></span>
 
-            <div>
                 <label for="date">Data:</label>
                 <input type="text" name="date" value="20.05.2020" id="date" disabled="true">
-            </div>
+                <span id="errorDate" class="errors-text"></span>
 
-            <div>
                 <label for="location">Lokalizacja:</label>
                 <input type="text" name="location" value="Poznań" id="location" disabled="true">
-
-            </div>
+                <span id="errorLocation" class="errors-text"></span>
+            
         </form>
 
         <h2>Konsultaci pracujący na projekcie</h2>
@@ -54,6 +53,7 @@
                     <th>Imie konsultanta</th>
                     <th>Nazwisko konsultanta</th>
                     <th>Ilość godzin</th>
+                    <th>Rodzaj pracy</th>
                 </tr>
             </thead>
 
@@ -62,6 +62,7 @@
                     <td>Anna</td>
                     <td>Nowak</td>
                     <td>12</td>
+                    <td>Raportowanie</td>
                   
                 </tr>
             </tbody>
@@ -71,12 +72,13 @@
                     <td>Piotr</td>
                     <td>Kot</td>
                     <td>9</td>
+                    <td>PM</td>
                 </tr>
             </tbody>
            
         </table>
 
-        <div>
+        <div class="form-buttons">
             <a href="/MP1/pages/consultant-edit.html" class="button-edit">Edytuj</a>  
             <a href="/MP1/pages/consultant-list.html" class="button-cancel">Anuluj</a>  
         </div>

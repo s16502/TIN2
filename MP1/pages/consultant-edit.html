@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GreenLeaf</title>
     <link rel="stylesheet" href="/MP1/css/style.css" />
+    <script type="application/javascript" src="/MP1/js/validationCommon.js"></script>
+    <script type="application/javascript" src="/MP1/js/validationConsultForm.js"></script>
 </head>
 <body>
     <header>
@@ -23,22 +25,22 @@
         </nav> 
     <main>
         <h2>Edytuj konsultanta</h2>
-        <form class="form">
-            <div>
+        <form class="form" novalidate onsubmit="return validateForm();">
+            
                 <label for="empName">Imię:</label>
                 <input type="text" name="empName" value="Jan" id="empName" disabled="true">
-            </div>
-
-            <div>
+                <span id="errorFirstName" class="errors-text"></span>
+         
                 <label for="empSurname">Nazwisko:</label>
                 <input type="text" name="empSurname" value="Kowalski" id="empSurname" disabled="true">
-            </div>
-
-            <div>
+                <span id="errorLastName" class="errors-text"></span>
+            
                 <label for="empEmail">Email:</label>
                 <input type="email" name="empEmail" value="jan.kowalski@greenleaf.com" id="empEmail" disabled="true">
-            </div>
-             <div>
+                <span id="errorEmail" class="errors-text"></span>  
+           
+             <div class="form-buttons">
+                <p id="errorsSummary" class="errors-text"></p>
                 <input type="submit" value="Zatwierdź" class="button-edit" />  
                 <a href="/MP1/pages/consultant-list.html" class="button-cancel">Anuluj</a>  
             </div>
